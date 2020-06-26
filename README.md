@@ -32,7 +32,7 @@ Configuração:
 ----------------
 A configuração do serviço é realizada através de um arquivo JSON, passado como argumento. Um exemplo de configuração pode ser encontrado em: [`etc/conf/options.json`]
 
-Examplos:
+Exemplos:
 ------------
 Um exemplo, para captura de imagens da câmera através deste serviço, pode ser encontrado em [`examples/client.py`](examples/client.py).
 
