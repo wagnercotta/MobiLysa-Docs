@@ -14,7 +14,7 @@ Este serviço não possui dependências em relação a outros serviços.
 
 Eventos:
 --------
-<img width=850/> ⇒ Mensagem recebida | <img width=850/> Responde ⇒ | <img width=500/> Descrição  
+<img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
 :incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.SetConfig` <br> :gem: **Tipo de mensagem:** [CameraConfig] | `Estado da Requisição` <br> :gem: **Tipo de mensagem::** [Empty] | `[RPC] Define as configurações da câmera`
 :incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.GetConfig` <br> :gem: **Tipo de mensagem:** [FieldSelector] | `Configuração atual` <br> :gem: **Tipo de mensagem::** [CameraConfig] | `[RPC] Retorna as configurações da câmera`
