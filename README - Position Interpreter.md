@@ -15,14 +15,12 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **tópico:** `SpeechRecognition.*.Phrase` <br> :gem: **Tipo de mensagem:** [Phrase] | :incoming_envelope: **tópico:** `PathPlannerRecognition.*.Phrase` `Requisição de Planejamento de Rota` <br> :gem: **Tipo de mensagem::** [PathRequest] | `Realização da conversão de uma palavra, referente a uma posição, para coordenadas entendíveis pelo serviço PathPlanner`
-
-
+:incoming_envelope: **tópico:** `SpeechRecognition.*.Phrase` <br> :gem: **Tipo de mensagem:** [Phrase] | :incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **Tipo de mensagem::** [PathRequest] | `Realização da conversão de uma palavra, referente a uma posição, para coordenadas entendíveis pelo serviço PathPlanner`
 
 [Phrase]: https://github.com/labviros/is-msgs/tree/master/docs#is.common.Phrase
 [PathRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.PathRequest
 ```
-{cameragateway_id} = número identificador da câmera, passado no arquivo de configuração.
+{area_id} = número identificador do ambiente, passado no arquivo de configuração.
 ```
 
 Configuração:
@@ -31,6 +29,6 @@ A configuração do serviço é realizada através de um arquivo JSON, passado c
 
 Exemplos:
 ------------
-Um exemplo, para captura de imagens da câmera através deste serviço, pode ser encontrado em [`examples/client.py`](examples/client.py).
+Um exemplo, que realiza um conversão de uma palavra, referente a uma posição, para coordenadas entendíveis pelo serviço PathPlanner, pode ser encontrado em [`examples/client.py`](examples/client.py).
 
-Um outro exemplo, para modificação dos parâmetros da câmera e para retorno da configuração atual, pode ser encontrado em [`examples/rpc_client.py`](examples/rpc_client.py).
+
