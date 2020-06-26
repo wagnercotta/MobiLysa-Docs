@@ -15,7 +15,7 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **Tipo de mensagem:** [PathRequest] | :incoming_envelope: **tópico:*RobotController.{robot_id}.SetTask* `` <br> :gem: **Tipo de mensagem::** [RobotTaskRequest] | `Planejamento e envio de rota para o robô`
+:incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **Tipo de mensagem:** [PathRequest] | :incoming_envelope: **tópico:** `RobotController.{robot_id}.SetTask` <br> :gem: **Tipo de mensagem:** [RobotTaskRequest] | `Planejamento e envio de rota para o robô`
 
 [RobotTaskRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.RobotTaskRequest
 [PathRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.PathRequest
