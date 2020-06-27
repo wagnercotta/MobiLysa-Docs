@@ -12,7 +12,7 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:microphone: Uma frase dita em um microfone | :incoming_envelope: **tópico:** `SpeechRecognition.{microphone_id}.Phrase` <br> :gem: **tipo de mensagem:** [Phrase] | [Stream] Reconhece frases ditas em um microfone e publica o conteúdo, a confiaça do reconhecimento e a linguagem.
+:microphone: Uma frase dita em um microfone | :incoming_envelope: **tópico:** `SpeechRecognition.{microphone_id}.Phrase` <br> :gem: **tipo de mensagem:** [Phrase] | [Stream] Reconhece frases ditas em um microfone e publica o conteúdo, a confiança do reconhecimento e a linguagem.
 
 [Phrase]: https://github.com/labviros/is-msgs/tree/master/docs#is.common.Phrase
 
