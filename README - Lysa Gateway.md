@@ -17,7 +17,7 @@ Eventos:
 :incoming_envelope: **topic:** `RobotGateway.{robot_id}.SetConfig` <br> :gem: **schema:** [RobotConfig] | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** Empty | `Define a configuração do robô, por exemplo, velocidade atual`
 :incoming_envelope: **topic:** `RobotGateway.{robot_id}.GetConfig` <br> :gem: **schema:** Empty | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** [RobotConfig] | `Retorna a configuração atual`
 
-
+[Empty]: https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/empty.proto
 [RobotConfig]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.RobotConfig
 ```
 {robot_id} = número identificador do robô, passado no arquivo de configuração
@@ -29,6 +29,6 @@ A configuração do serviço é realizada através de um arquivo JSON, passado c
 
 Exemplos:
 ------------
-Um exemplo, que simula um ambiente, planeja uma rota de acordo com o cliente e envia a rota a ser seguida para o robô, pode ser encontrado em [`examples/client.py`](examples/client.py).
+Um exemplo, que define a configuração do robô com uma dada velocidade e depois solicita o retorno da configuração atual do robô, pode ser encontrado em [`examples/client.py`](examples/client.py).
 
 
