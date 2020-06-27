@@ -14,8 +14,8 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **topic:** `RobotGateway.{robot_id}.SetConfig` <br> :gem: **schema:** [RobotConfig] | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** Empty | `Define a configuração do robô, por exemplo, velocidade atual`
-:incoming_envelope: **topic:** `RobotGateway.{robot_id}.GetConfig` <br> :gem: **schema:** Empty | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** [RobotConfig] | `Retorna a configuração atual`
+:incoming_envelope: **tópico:** `RobotGateway.{robot_id}.SetConfig` <br> :gem: **tipo de mensagem:** [RobotConfig] | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **tipo de mensagem:** Empty | `Define a configuração do robô, por exemplo, velocidade atual`
+:incoming_envelope: **tópico:** `RobotGateway.{robot_id}.GetConfig` <br> :gem: **tipo de mensagem:** Empty | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **tipo de mensagem:** [RobotConfig] | `Retorna a configuração atual`
 
 [Empty]: https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/empty.proto
 [RobotConfig]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.RobotConfig
