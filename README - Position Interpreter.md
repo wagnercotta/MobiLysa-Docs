@@ -15,7 +15,7 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **tópico:** `SpeechRecognition.*.Phrase` <br> :gem: **Tipo de mensagem:** [Phrase] | :incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **Tipo de mensagem::** [PathRequest] | `Realização da conversão de uma palavra, referente a uma posição, para coordenadas entendíveis pelo serviço PathPlanner`
+:incoming_envelope: **tópico:** `SpeechRecognition.*.Phrase` <br> :gem: **tipo de mensagem:** [Phrase] | :incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **tipo de mensagem::** [PathRequest] | `Realização da conversão de uma palavra, referente a uma posição, para coordenadas entendíveis pelo serviço PathPlanner`
 
 [Phrase]: https://github.com/labviros/is-msgs/tree/master/docs#is.common.Phrase
 [PathRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.PathRequest
