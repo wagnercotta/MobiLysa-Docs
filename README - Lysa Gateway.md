@@ -14,13 +14,13 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **tópico:** `PathPlanner.AreaID.{area_id}.GetPath` <br> :gem: **Tipo de mensagem:** [PathRequest] | :incoming_envelope: **tópico:** `RobotController.{robot_id}.SetTask` <br> :gem: **Tipo de mensagem:** [RobotTaskRequest] | `Planejamento e envio de rota para o robô`
+:incoming_envelope: **topic:** `RobotGateway.{robot_id}.SetConfig` <br> :gem: **schema:** [RobotConfig] | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** Empty | `Define a configuração do robô, por exemplo, velocidade atual`
+:incoming_envelope: **topic:** `RobotGateway.{robot_id}.GetConfig` <br> :gem: **schema:** Empty | :incoming_envelope: **topic:** `{request.reply_to}` <br> :gem: **schema:** [RobotConfig] | `Retorna a configuração atual`
 
-[RobotTaskRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.RobotTaskRequest
-[PathRequest]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.PathRequest
+
+[RobotConfig]: https://github.com/labviros/is-msgs/tree/master/docs#is.robot.RobotConfig
 ```
-{area_id} = número identificador do ambiente, passado no arquivo de configuração.
-{robot_id} = número identificador do robô, recebido na mensagem `PathPlanner.AreaID.{area_id}.GetPath`
+{robot_id} = número identificador do robô, passado no arquivo de configuração
 ```
 
 Configuração:
