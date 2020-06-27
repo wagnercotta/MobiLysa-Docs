@@ -34,7 +34,8 @@ Em um ambiente de desenvolvimento, instale os requisitos com o seguinte comando:
 ```shell
 pip install -r requirements.txt
 ```
-And then execute:
+Em seguida:
+
 ```shell
 python -m server
 ```
