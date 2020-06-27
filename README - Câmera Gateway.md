@@ -16,8 +16,8 @@ Eventos:
 --------
 <img width=850/> ⇒ Mensagem recebida | <img width=850/> Encaminha ⇒ | <img width=500/> Descrição  
 :------------ | :-------- | :----------
-:incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.SetConfig` <br> :gem: **Tipo de mensagem:** [CameraConfig] | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **Tipo de mensagem:** [Empty] | `[RPC] Define as configurações da câmera`
-:incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.GetConfig` <br> :gem: **Tipo de mensagem:** [FieldSelector] | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **Tipo de mensagem::** [CameraConfig] | `[RPC] Retorna as configurações da câmera`
+:incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.SetConfig` <br> :gem: **tipo de mensagem:** [CameraConfig] | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **tipo de mensagem:** [Empty] | `[RPC] Define as configurações da câmera`
+:incoming_envelope: **tópico:** `CameraGateway.{cameragateway_id}.GetConfig` <br> :gem: **tipo de mensagem:** [FieldSelector] | :incoming_envelope: **tópico:** `{request.reply_to}` <br> :gem: **tipo de mensagem::** [CameraConfig] | `[RPC] Retorna as configurações da câmera`
 
 
 
